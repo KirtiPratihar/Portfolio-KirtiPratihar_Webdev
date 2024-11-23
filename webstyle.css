@@ -1,0 +1,382 @@
+body {
+  background-color: #740938;
+}
+
+.logo {
+  color: #de7c7d;
+  padding: 2px 20px;
+  font-size: 1.4rem;
+}
+
+/* /navbar things/ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px;
+  background: linear-gradient(135deg, #cc2b52, #af1740);
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  position: relative;
+  box-shadow: 0 4px 10px #ea44a7;
+}
+
+/* Logo Styling */
+.navbar .logo p {
+  font-size: 1.5rem;
+  color: #d8dbbd;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+/* Navigation List Styling */
+.navbar .list ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+}
+
+.navbar .list ul li {
+  margin: 0 15px;
+}
+
+.navbar .list ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #f3f3e0;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar .list ul li a:hover {
+  background: rgba(246, 58, 130, 0.423);
+  color: #d9edd6;
+  box-shadow: 0px 4px 10px rgba(26, 232, 163, 0.5);
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .list ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .list ul li {
+    margin: 10px 0;
+  }
+}
+
+.headertext {
+  margin-top: 20px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 80px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("code1.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  border-radius: 15px; /* Adds rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a shadow for a polished look */
+}
+
+.headertext h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-left: 40px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Text shadow for better readability */
+}
+
+.headertext h1 span {
+  color: rgb(217, 249, 8);
+}
+
+/* /-----------------------about-----------/ */
+.about {
+  padding: 50px;
+  background-color: #de7c7d;
+  color: rgb(38, 25, 25);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.aboutco1 {
+  flex-basis: 35%;
+}
+
+.aboutco2 {
+  flex-basis: 60%;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0px 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  font-size: 20px;
+  position: absolute;
+  background-color: rgb(204, 58, 58);
+  width: 0;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.tab-links.active-link::after {
+  width: 60%;
+}
+
+.tab-content ul li {
+  list-style: none;
+  margin: 10px 0px;
+  font-size: 25px;
+}
+
+.tab-content ul li span {
+  color: rgb(177, 13, 103);
+  font-size: 14px;
+}
+
+.tab-content.active-tab {
+  display: block;
+}
+
+#buc {
+  font-size: 30px;
+}
+
+#cat {
+  font-size: 25px;
+}
+
+#dog {
+  font-size: 45px;
+  color: #740938;
+}
+
+/* /contact section/ */
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url(usingmob.jpg) no-repeat center center/cover;
+}
+
+/* #contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* width: 60%; */
+}
+
+.form-grp > input {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.form-grp > textarea {
+  margin-top: 10px;
+  width: 300px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+#submit {
+  align-items: center;
+  margin-left: 110px;
+  height: 35px;
+  width: 125px;
+  border: none;
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#submit:hover{
+  background-color: #be7c7d;
+  color: white;
+  border-bottom: 4px solid rgb(177, 13, 103) ;
+}
+
+#contact>h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  font-size: 30px;
+
+}
+
+.icons {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  gap: 30px;
+  font-size: 30px;
+  
+}
+.icons>a{
+  text-decoration: none;
+  color: black;
+}
+.icons>a:hover {
+  color: #fff;
+  scale: 1.4;
+}
+
+/* Projects Section Styling */
+#projects {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #af1740;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #af1740;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.project-card .btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background: #af1740;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.project-card .btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills-section {
+  background: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #af1740;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skill-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.skill-item h3 {
+  font-size: 1.5rem;
+  color: #af1740;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}

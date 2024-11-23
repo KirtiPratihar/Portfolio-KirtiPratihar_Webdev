@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIRTI PORTFOLIO</title>
+    <link rel="stylesheet" href="webstyle.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <p>KIRTI'S PORTFOLIO</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="item"><a href="#">HOME</a></li>
+                <li class="item"><a href="#">ABOUT ME</a></li>
+                <li class="item"><a href="#">PROJECTS</a></li>                
+                <li class="item"><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="headertext">
+        <h1>
+            Hi, I'm <span>Kirti</span></br>Pratihar, a Enthusiastic Coder
+        </h1>
+
+    </div>
+    <div class="about">
+        <div class="coint">
+            <div class="row">
+                <div class="aboutco1">
+                    <img src='kirtidsb.jpg', alt="My Photo" style="width: 600px; height: auto; border-radius: 8px;">
+                </div>
+                <div class="aboutco2">
+                    <h1 class="aa" id="dog">ABOUT ME</h1>
+                    <p class="aa" id="cat">I am Kirti Pratihar, a passionate and driven individual with a strong interest in leveraging technology to solve real-world problems. Proficient in Python and C++, I enjoy applying my programming skills to create innovative and efficient solutions.</p>
+
+                    <p class="aa" id="cat">    Currently, I am working on a breast cancer detection project using machine learning, combining my analytical skills with cutting-edge technology to contribute to advancements in healthcare. I have also developed a website focused on improving rural hygiene for women, aiming to spread awareness and provide valuable resources to communities in need.
+                    </p>
+                    <p class="aa" id="cat"> 
+                        My goal is to make a meaningful impact through technology, delivering solutions that empower and transform lives. Beyond my technical pursuits, I am committed to continuous learning and embracing challenges that foster personal and professional growth. With a keen eye for detail and a creative mindset, I strive to craft solutions that are not only effective but also user-centric and impactful.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Menstrual Hygiene Dashboard</h3>
+                <p>This project aims to improve menstrual hygiene and sanitation for females in rural areas. Our main goal is to reduce the usage of cloth, which can cause harmful diseases, by providing a sustainable solution to distribute affordable sanitary pads.</p>
+                <a href=https://github.com/KirtiPratihar/IEEEVitBhopal_BLH08_Codastic5.git target="_blank" class="btn">View on GitHub</a>
+            </div>
+    
+            <div class="project-card">
+                <h3>Web Development Projects</h3>
+                <p>These consist of various web development projects that aim to create solutions that are deliver seamless user experiences while addressing real-world needs</p>
+                <a href=https://github.com/KirtiPratihar/WebDevlopement-Project.git target="_blank" class="btn">View on GitHub</a>
+            </div>
+    
+            <div class="project-card">
+                <h3>ML Model for Breast Cancer Detection</h3>
+                <p>A machine learning-based approach for early detection and classification of breast cancer, Using machine learning algorithms and medical datasets to improve diagnostic accuracy.</p>
+                <a href= https://github.com/KirtiPratihar/Breast_Cancer_Detection_ML_Model.git target="_blank" class="btn">View on LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <section id="skills" class="skills-section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>Programming Languages</h3>
+                <p>Python, C++, Java</p>
+            </div>
+            <div class="skill-item">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <h3>Data Science</h3>
+                <p>Pandas, NumPy, Matplotlib</p>
+            </div>
+            <div class="skill-item">
+                <h3>ML Algorithms</h3>
+                <p>Linear Regression, Random Forest</p>
+            </div>
+            <div class="skill-item">
+                <h3>Tools & Platforms</h3>
+                <p>Git, GitHub</p>
+            </div>
+            <div class="skill-item">
+                <h3>Database Management</h3>
+                <p>MySQL</p>
+            </div>
+        </div>
+    </section>    
+
+    <section id="contact">
+        <h1 class="">CONTACT ME</h1>
+        <div class="contact-box">
+            
+            <form action="">
+                <div class="form-grp">
+                    <label for=""></label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                </div>
+                <div class="form-grp">
+                    <label for="EMAIL ID:"></label>
+                    <input type="email" name="Name" id="Email" placeholder="Enter your Email">
+                </div>
+                <div class="form-grp">
+                    <label for=""></label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-grp">
+                    <label for=""></label>
+                    <textarea name="message" id="message" placeholder="ENTER YOUR MESSAGE" cols="30" rows="15"> </textarea>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/kirti-pratihar-426072279" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+            <a href="https://github.com/KirtiPratihar" target="_blank"><i class="ri-github-fill"></i></a>
+            <a href="mailto:pratiharkirti@gmail.com" target="_blank"><i class="ri-mail-fill"></i></a>
+            <a href="https://leetcode.com/u/Kirti03/" target="_blank"><i class="ri-codepen-fill"></i></a>
+
+        </div>
+    </section>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links"); var tabcontents = document.getElementsByClassName("tab-content");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+</body>
+
+</html>

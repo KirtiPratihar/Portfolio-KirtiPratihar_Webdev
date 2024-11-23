@@ -103,7 +103,7 @@ body {
 }
 
 /* /-----------------------about-----------/ */
-.about {
+#about {
   padding: 50px;
   background-color: #de7c7d;
   color: rgb(38, 25, 25);

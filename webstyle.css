@@ -325,6 +325,7 @@ body {
   display: inline-block;
   text-decoration: none;
   color: white;
+  margin:5px;
   background: #af1740;
   padding: 10px 15px;
   border-radius: 5px;

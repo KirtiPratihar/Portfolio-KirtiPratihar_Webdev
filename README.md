@@ -7,5 +7,5 @@ This is a personal portfolio website created using basic HTML and CSS. The portf
 - **Responsive Design**: The portfolio is optimized for different screen sizes, including mobile and desktop.
 - **About Me**: A section to introduce myself, including my background, skills, and interests.
 - **Projects**: A showcase of some of my most important projects, with descriptions and links to the live demos or GitHub repositories.
-- **My Skills**:This showcases my  Technical skills 
-- **Contact**: A form or links to connect with me through social media or email..
+- **My Skills**:This showcases my Technical and Non Technical skills 
+- **Contact**: A form or links to connect with me through social media or email.
